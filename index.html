@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css
+    "
+    />
+    <style>
+        .center{
+            display: flex;
+            justify-content: center;
+        }
+        h1{
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .table-dark{
+            color:white;
+            background-color: #1f1b24;
+        }
+        footer{
+            display:flex;
+            justify-content: center;
+            color: grey;
+            text-transform: uppercase;
+        }
+    </style>
+
+    <title>Covid-19 Tracker</title>
+  </head>
+  <body >
+    <div class="container" id="body">
+    
+      <div class="row">
+        <div class="col-md-12 offset-md-2 center">
+        <div class="col-md-9 offset-md-3 col-xs-12">
+            <div>
+                <h1>Covid-19 Tracker</h1>
+                <div class="btn btn-primary" id="mode">Switch to Dark Mode</div>
+                  </div>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Country</th>
+                <th scope="col">Active Cases</th>
+                <th scope="col">Confirmed Cases</th>
+                <th scope="col">Critical</th>
+                <th scope="col">Deaths</th>
+              </tr>
+            </thead>
+            <tbody id="output"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <footer>
+        <p>KV Dev. All Rights Reserved 2020</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
